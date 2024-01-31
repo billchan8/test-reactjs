@@ -29,4 +29,4 @@ jobs:
           git pull origin main
           git status
           npm install --only=prod
-          timeout 105m npm restart || true
+          npm start & npx wait-on http://127.0.0.1:3000
