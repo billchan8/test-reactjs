@@ -29,5 +29,4 @@ jobs:
           git pull origin main
           git status
           npm install --only=prod
-          npx kill-port 3000
           npm restart & npx wait-on http://127.0.0.1:3000
